@@ -1,0 +1,26 @@
+﻿<Window x:Class="Project_Part_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_Part_1"
+        mc:Ignorable="d"
+        Title="Home Page" Height="450" Width="800">
+    <Grid Margin="0,0,-183,-115">
+        <Grid.Background>
+            <ImageBrush ImageSource="/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="home" Content="STUDENT NAME" Grid.ColumnSpan="4" HorizontalAlignment="Left" Margin="39,202,0,0" VerticalAlignment="Top" Click="Home" Height="47" Width="206" Background="{x:Null}" Foreground="#FF101010" FontSize="16" FontWeight="Bold" FontStyle="Italic" BorderBrush="#FF47184C" BorderThickness="3,3,3,3"/>
+        <Button x:Name="register" Content="LOGOUT" Grid.ColumnSpan="4" HorizontalAlignment="Left" Margin="792,33,0,0" VerticalAlignment="Top" Height="31" Width="167" Background="{x:Null}" Foreground="#FF101010" FontWeight="Bold" FontStyle="Italic" FontSize="16" BorderThickness="3,3,3,3" BorderBrush="#FF501B56" Click="register_Click"/>
+        <Button x:Name="strt_quiz" Content="START QUIZ" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="64" Margin="377,332,0,0" VerticalAlignment="Top" Width="307" Foreground="#FF101010" FontSize="16" FontStyle="Italic" BorderBrush="#FF45164C" BorderThickness="3,3,3,3" Background="{x:Null}" FontWeight="Bold" Click="strt_quiz_Click"/>
+        <Label x:Name="show_name" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="47" Margin="303,202,0,0" VerticalAlignment="Top" Width="515" BorderBrush="#FF421B57" BorderThickness="3,3,3,3" FontSize="14" FontWeight="Bold" FontStyle="Italic"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,29 @@
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\bin\Debug\net8.0-windows\Project Part-1.exe
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\bin\Debug\net8.0-windows\Project Part-1.deps.json
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\bin\Debug\net8.0-windows\Project Part-1.runtimeconfig.json
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\bin\Debug\net8.0-windows\Project Part-1.dll
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\bin\Debug\net8.0-windows\Project Part-1.pdb
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\mainwindow.g.cs
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\question.g.cs
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\Student-Login.g.cs
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\student-registration.g.cs
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\Project Part-1_MarkupCompile.cache
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\Project Part-1_MarkupCompile.lref
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\mainwindow.baml
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\question.baml
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\Student-Login.baml
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\student-registration.baml
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\Project Part-1.g.resources
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\Project Part-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\Project Part-1.AssemblyInfoInputs.cache
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\Project Part-1.AssemblyInfo.cs
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\Project Part-1.csproj.CoreCompileInputs.cache
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\Project Part-1.sourcelink.json
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\Project Part-1.dll
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\refint\Project Part-1.dll
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\Project Part-1.pdb
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\Project Part-1.genruntimeconfig.cache
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\ref\Project Part-1.dll
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\ScoreQuestions.g.cs
+C:\Users\malek\Source\Repos\Project-Part-1\Project Part-1\obj\Debug\net8.0-windows\ScoreQuestions.baml
