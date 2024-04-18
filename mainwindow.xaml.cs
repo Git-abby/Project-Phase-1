@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Project_Part_1
 {
@@ -16,12 +17,22 @@ namespace Project_Part_1
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        private string username;
+
+        public MainWindow(string username)
         {
             InitializeComponent();
+            this.username = username;
+            ShowUserName();
         }
 
-        private void Home(object sender, RoutedEventArgs e)
+        private void ShowUserName()
+        {
+            // Display the username in a label or any other UI element
+            // For example:
+            show_name.Content = "Welcome, " + username + "!";
+        }
+            private void Home(object sender, RoutedEventArgs e)
         {
 
         }

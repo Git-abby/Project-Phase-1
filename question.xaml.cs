@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,40 +21,54 @@ namespace Project_Part_1
     public partial class question : Window
     {
         private int currentQuestionIndex = 0;
-        private string[] questions = {
-    "1. Which of the following is a fundamental principle of object-oriented programming?",
-    "2. What is the capital of France?",
-    "3. What is the largest mammal?",
-    "4. Who wrote 'To Kill a Mockingbird'?",
-    "5. What does C# stand for?",
-    "6. Which keyword is used to declare a method that does not return a value in C#?",
-    "7. What is the base class for all WPF controls?",
-    "8. What markup language is used to create user interfaces in WPF?",
-    "9. What event is fired when a button is clicked in WPF?",
-    "10. Which layout panel automatically arranges its children in a single line?",
-};
-
-        private string[][] options = {
-    new string[] { "A) Encapsulation", "B) Procedural programming", "C) Functional programming", "D) Imperative programming" },
-    new string[] { "A) London", "B) Paris", "C) Berlin", "D) Madrid" },
-    new string[] { "A) Elephant", "B) Blue whale", "C) Giraffe", "D) Lion" },
-    new string[] { "A) Harper Lee", "B) J.K. Rowling", "C) George Orwell", "D) Charles Dickens" },
-    new string[] { "A) C Sharp", "B) Computer Sharp", "C) C Syntax", "D) None of the above" },
-    new string[] { "A) void", "B) null", "C) return", "D) int" },
-    new string[] { "A) Control", "B) FrameworkElement", "C) UIElement", "D) DependencyObject" },
-    new string[] { "A) HTML", "B) XAML", "C) XML", "D) CSS" },
-    new string[] { "A) Clicked", "B) Pressed", "C) MouseDown", "D) MouseClick" },
-    new string[] { "A) StackPanel", "B) WrapPanel", "C) Grid", "D) DockPanel" },
-};
-        private string[] correctAnswers = { "A", "B", "B", "A", "A", "A", "B", "B", "A", "A" };
+        private string[] questions;
+        private string[][] options;
+        private string[] correctAnswers;
         private int score = 0;
+
+        private string connectionString = "Data Source=WEDNESDAY23\\SQLEXPRESS22;Initial Catalog=QuizDb;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+
 
         public question()
         {
             InitializeComponent();
+            LoadQuestionsFromDatabase();
             DisplayQuestion();
         }
+        private void LoadQuestionsFromDatabase()
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = "SELECT Question, OptionA, OptionB, OptionC, OptionD, CorrectOption FROM Questions";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    SqlDataReader reader = command.ExecuteReader();
 
+                    // Initialize arrays based on the number of rows in the database
+                    questions = new string[6];
+                    options = new string[6][];
+                    correctAnswers = new string[6];
+
+                    int index = 0;
+                    while (reader.Read() && index < 10)
+                    {
+                        questions[index] = reader.GetString(0);
+                        options[index] = new string[] { reader.GetString(1), reader.GetString(2), reader.GetString(3), reader.GetString(4) };
+                        correctAnswers[index] = reader.GetString(5);
+                        index++;
+                    }
+
+                    reader.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading questions from database: {ex.Message}");
+                // You may want to handle this error gracefully
+            }
+        }
         private void DisplayQuestion()
         {
             if (currentQuestionIndex < questions.Length)

@@ -1,4 +1,5 @@
 using System.Windows;
+using System.Data.SqlClient;
 
 [assembly: ThemeInfo(
     ResourceDictionaryLocation.None,            //where theme specific resource dictionaries are located

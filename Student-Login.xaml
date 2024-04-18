@@ -11,10 +11,11 @@
             <ImageBrush ImageSource="/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg"/>
         </Grid.Background>
         <Label x:Name="username" Content="USERNAME" HorizontalAlignment="Left" Height="32" Margin="93,121,0,0" VerticalAlignment="Top" Width="125" Background="{x:Null}" BorderThickness="3,3,3,3" Foreground="#FF090909" FontSize="14" FontWeight="Bold" FontStyle="Italic" BorderBrush="#FF792158"/>
-        <TextBox x:Name="course_name_box" HorizontalAlignment="Left" Height="32" Margin="308,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
+        <TextBox x:Name="usernameTextBox" HorizontalAlignment="Left" Height="32" Margin="308,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
         <Button x:Name="submit" Content="SUBMIT" HorizontalAlignment="Left" Height="32" Margin="329,298,0,0" VerticalAlignment="Top" Width="185" Click="Submit_Click" Background="{x:Null}" Foreground="#FF101010" FontSize="16" FontWeight="Bold" FontStyle="Italic" BorderThickness="3,3,3,3" BorderBrush="#FF57215F"/>
-        <Label x:Name="psw_login" Content="PASSWORD" HorizontalAlignment="Left" Height="32" Margin="93,0,0,0" VerticalAlignment="Center" Width="178" Foreground="#FF101010" FontSize="14" FontWeight="Bold" FontStyle="Italic" BorderBrush="#FF5B2865" BorderThickness="3,3,3,3"/>
-        <TextBox x:Name="psw_box" HorizontalAlignment="Left" Height="32" Margin="308,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="227"/>
+        <Label x:Name="password" Content="PASSWORD" HorizontalAlignment="Left" Height="32" Margin="93,0,0,0" VerticalAlignment="Center" Width="178" Foreground="#FF101010" FontSize="14" FontWeight="Bold" FontStyle="Italic" BorderBrush="#FF5B2865" BorderThickness="3,3,3,3"/>
+        <PasswordBox x:Name="passwordTextBox"  Height="32" Margin="308,199,265,0"  VerticalAlignment="Top" Width="227"/>
+        <Button x:Name="register_btn" Content="Register" HorizontalAlignment="Left" Height="32" Margin="562,29,0,0" VerticalAlignment="Top" Width="185" Click="Registration_Click" Background="{x:Null}" Foreground="#FF101010" FontSize="16" FontWeight="Bold" FontStyle="Italic" BorderThickness="3,3,3,3" BorderBrush="#FF57215F"/>
 
     </Grid>
 </Window>
