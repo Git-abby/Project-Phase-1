@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oQOESGO2SWUYLp9SfR2U4IMzhTgH8Be6cwDmuoeLbmHoOWgDPE/S43GVQVntyOokFtlvAZZFDwNvt4tm2mw/hQ==",
+  "dgSpecHash": "st2j5r55ECZtVGI1XjBlOjCmo2MY7B+i/qfbeG07k8w/A4QUihqGCcFPMJzGfxNVDn+97dF1caGuFdUlbTGkxA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\malek\\source\\repos\\Project-Part-1\\Project Part-1\\Project Part-1.csproj",
+  "projectFilePath": "C:\\Users\\malek\\source\\repos\\Project-Phase-1\\Project Part-1\\Project Part-1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\malek\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\malek\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
